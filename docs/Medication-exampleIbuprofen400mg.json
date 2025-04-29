@@ -1,0 +1,32 @@
+{
+  "resourceType": "Medication",
+  "id": "exampleIbuprofen400mg",
+  "meta": {
+    "profile": [
+      "http://electronichealth.se/fhir/StructureDefinition/NLLMedication"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://example.org/fake-medication-system",
+      "value": "ibu400"
+    }
+  ],
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "text": "Ibuprofen"
+      },
+      "strength": {
+        "numerator": {
+          "value": 400,
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "unit": "tablet"
+        }
+      }
+    }
+  ]
+}

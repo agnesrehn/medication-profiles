@@ -1,0 +1,59 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "my-MyMedication",
+  "url": "http://example.org/StructureDefinition/my-MyMedication",
+  "name": "MyMedication",
+  "title": "My Medication",
+  "status": "draft",
+  "description": "A Profile based on NLLMedication describing the medication in medication orders, for example xxxx",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://electronichealth.se/fhir/StructureDefinition/NLLMedication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.status",
+        "path": "Medication.status",
+        "max": "0"
+      },
+      {
+        "id": "Medication.manufacturer",
+        "path": "Medication.manufacturer",
+        "max": "0"
+      },
+      {
+        "id": "Medication.amount",
+        "path": "Medication.amount",
+        "max": "0"
+      },
+      {
+        "id": "Medication.ingredient.item[x]",
+        "path": "Medication.ingredient.item[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs"
+        }
+      },
+      {
+        "id": "Medication.ingredient.strength",
+        "path": "Medication.ingredient.strength",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.batch",
+        "path": "Medication.batch",
+        "max": "0"
+      }
+    ]
+  }
+}

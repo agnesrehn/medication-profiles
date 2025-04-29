@@ -1,0 +1,170 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "medicationprofiles.id",
+  "url": "http://example.org/ImplementationGuide/medicationprofiles.id",
+  "version": "0.1.0",
+  "name": "MedicationProfiles",
+  "status": "draft",
+  "publisher": "Agnes Rehn, master thesis at Karolinska Institutet",
+  "contact": [
+    {
+      "name": "Agnes Rehn, master thesis at Karolinska Institutet",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "medicationprofiles.id",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Medication/exampleIbuprofen400mg"
+        },
+        "name": "exampleIbuprofen400mg",
+        "isExample": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/FollowUpExtension.id"
+        },
+        "name": "Follow Up",
+        "description": "This is an extension for follow up",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FollowUpVs"
+        },
+        "name": "Follow Up",
+        "description": "This is a valueset for Follow up",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/my-MyDosage"
+        },
+        "name": "My Dosage",
+        "description": "A Profile based on MedicationAdministration describing the dosage in medication orders, for example xxxx",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/my-MyDosage2"
+        },
+        "name": "My Dosage2",
+        "description": "A Profile based on MedicationRequest describing the dosage in medication orders, for example xxxx",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/my-MyMedication"
+        },
+        "name": "My Medication",
+        "description": "A Profile based on NLLMedication describing the medication in medication orders, for example xxxx",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/my-medicationrequest"
+        },
+        "name": "My MedicationRequest",
+        "description": "A profile based on MedicationRequest.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MyPatient"
+        },
+        "name": "MyPatient",
+        "description": "An example profile of the Patient resource.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NLLMedication"
+        },
+        "name": "NLLMedication",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NLLMedicationSnapshot"
+        },
+        "name": "NLLMedication",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "description": "An example of a patient with a license to krill.",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/MyPatient"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SiteQualifier"
+        },
+        "name": "Qualified Administration Site",
+        "description": "Indicates whether a more precise administration site is needed beyond the standard site.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/self-administration"
+        },
+        "name": "Self Administration",
+        "description": "Indicates whether the medication was self-administered by the patient.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/goal-extension"
+        },
+        "name": "Treatment Goal",
+        "description": "Describes the goal or purpose of the treatment.",
+        "isExample": false
+      }
+    ],
+    "page": {
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "title": "Home",
+          "generation": "markdown",
+          "name": "index.html",
+          "sourceUrl": "index.html"
+        }
+      ],
+      "name": "toc.html",
+      "sourceUrl": "toc.html"
+    },
+    "parameter": [
+      {
+        "code": {
+          "code": "copyrightyear",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "2025+"
+      },
+      {
+        "code": {
+          "code": "releaselabel",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "R5"
+      }
+    ]
+  }
+}

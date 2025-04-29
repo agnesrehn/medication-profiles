@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "FollowUp",
+  "id": "FollowUpVs",
+  "title": "Follow Up",
+  "description": "This is a valueset for Follow up",
+  "url": "http://example.org/ValueSet/FollowUpVs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.snomed.org/what-is-snomed-ct",
+        "concept": [
+          {
+            "code": "448337001",
+            "display": "telemedicinkonsultation med patient"
+          },
+          {
+            "code": "390906007",
+            "display": "uppföljande kontakt"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "my-MyDosage2",
+  "url": "http://example.org/StructureDefinition/my-MyDosage2",
+  "name": "MyDosage2",
+  "title": "My Dosage2",
+  "status": "draft",
+  "description": "A Profile based on MedicationRequest describing the dosage in medication orders, for example xxxx",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationRequest.priorPrescription",
+        "path": "MedicationRequest.priorPrescription",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.statusReason",
+        "path": "MedicationRequest.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.statusChanged",
+        "path": "MedicationRequest.statusChanged",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.category",
+        "path": "MedicationRequest.category",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.priority",
+        "path": "MedicationRequest.priority",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.supportingInformation",
+        "path": "MedicationRequest.supportingInformation",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.authoredOn",
+        "path": "MedicationRequest.authoredOn",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.reported",
+        "path": "MedicationRequest.reported",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.performerType",
+        "path": "MedicationRequest.performerType",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.performer",
+        "path": "MedicationRequest.performer",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.device",
+        "path": "MedicationRequest.device",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.reason",
+        "path": "MedicationRequest.reason",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.courseOfTherapyType",
+        "path": "MedicationRequest.courseOfTherapyType",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.insurance",
+        "path": "MedicationRequest.insurance",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.note",
+        "path": "MedicationRequest.note",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.effectiveDosePeriod",
+        "path": "MedicationRequest.effectiveDosePeriod",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.when",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.when",
+        "max": "1"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest",
+        "path": "MedicationRequest.dispenseRequest",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.initialFill",
+        "path": "MedicationRequest.dispenseRequest.initialFill",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.numberOfRepeatsAllowed",
+        "path": "MedicationRequest.dispenseRequest.numberOfRepeatsAllowed",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.quantity",
+        "path": "MedicationRequest.dispenseRequest.quantity",
+        "max": "0"
+      }
+    ]
+  }
+}
