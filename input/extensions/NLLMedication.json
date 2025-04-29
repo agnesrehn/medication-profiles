@@ -1,0 +1,934 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "NLLMedication",
+    "url": "http://electronichealth.se/fhir/StructureDefinition/NLLMedication",
+    "version": "1.1.1",
+    "name": "NLLMedication",
+    "status": "active",
+    "date": "2024-12-20",
+    "publisher": "Swedish eHealth Agency",
+    "fhirVersion": "4.0.1",
+    "mapping":  [
+        {
+            "identity": "EHM",
+            "name": "E-hälsomyndigheten concept"
+        }
+    ],
+    "kind": "resource",
+    "abstract": false,
+    "type": "Medication",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Medication",
+                "path": "Medication",
+                "short": "Medicinal products and medical consumables",
+                "definition": "This resource is used to represent a medicinal product or a medical consumable. Medicinal products are identified by NPL-pack-id and medical consumables by item number (sv: varunummer)."
+            },
+            {
+                "id": "Medication.id",
+                "path": "Medication.id",
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "Artikel-id"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.text",
+                "path": "Medication.text",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.text.status",
+                "path": "Medication.text.status",
+                "fixedCode": "extensions",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.text.div",
+                "path": "Medication.text.div",
+                "definition": "Summary including a sub-set of information.\n- Medicinal products:  current product name, form, strength and in specific situations producer (manufacturer).\n- Medical consumables: current product name and a description of the  product.",
+                "comment": "Maximum string length: 80",
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "Artikelbenämning"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.extension",
+                "path": "Medication.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo",
+                "path": "Medication.extension",
+                "sliceName": "nllArticleInfo",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "http://electronichealth.se/fhir/StructureDefinition/NLLArticleInfo"
+                        ]
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension",
+                "path": "Medication.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:medicinalProduct",
+                "path": "Medication.extension.extension",
+                "sliceName": "medicinalProduct",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productType",
+                "path": "Medication.extension.extension",
+                "sliceName": "productType",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productType.value[x].coding",
+                "path": "Medication.extension.extension.value[x].coding",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productType.value[x].coding.system",
+                "path": "Medication.extension.extension.value[x].coding.system",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productType.value[x].coding.version",
+                "path": "Medication.extension.extension.value[x].coding.version",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productType.value[x].coding.code",
+                "path": "Medication.extension.extension.value[x].coding.code",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productType.value[x].text",
+                "path": "Medication.extension.extension.value[x].text",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productName",
+                "path": "Medication.extension.extension",
+                "sliceName": "productName",
+                "min": 0,
+                "max": "1",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productName.extension",
+                "path": "Medication.extension.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 1
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productName.extension:currentProductName",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "currentProductName",
+                "min": 1,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productName.extension:history",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "history",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productName.extension:history.extension",
+                "path": "Medication.extension.extension.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 1
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productName.extension:history.extension:productName",
+                "path": "Medication.extension.extension.extension.extension",
+                "sliceName": "productName",
+                "min": 1,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:productName.extension:history.extension:periodOfUse",
+                "path": "Medication.extension.extension.extension.extension",
+                "sliceName": "periodOfUse",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:package",
+                "path": "Medication.extension.extension",
+                "sliceName": "package",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:package.extension",
+                "path": "Medication.extension.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:package.extension:packageContainer",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "packageContainer",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:package.extension:packageDescription",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "packageDescription",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:strength",
+                "path": "Medication.extension.extension",
+                "sliceName": "strength",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:strength.extension",
+                "path": "Medication.extension.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:strength.extension:quantity",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "quantity",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:strength.extension:quantity.value[x].value",
+                "path": "Medication.extension.extension.extension.value[x].value",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:strength.extension:quantity.value[x].unit",
+                "path": "Medication.extension.extension.extension.value[x].unit",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleInfo.extension:strength.extension:text",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "text",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleAvailability",
+                "path": "Medication.extension",
+                "sliceName": "nllArticleAvailability",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "http://electronichealth.se/fhir/StructureDefinition/NLLArticleAvailability"
+                        ]
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleAvailability.extension",
+                "path": "Medication.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.extension:nllArticleAvailability.extension:onTheMarket",
+                "path": "Medication.extension.extension",
+                "sliceName": "onTheMarket",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleAvailability.extension:salesStopped",
+                "path": "Medication.extension.extension",
+                "sliceName": "salesStopped",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleAvailability.extension:withdrawalDate",
+                "path": "Medication.extension.extension",
+                "sliceName": "withdrawalDate",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations",
+                "path": "Medication.extension",
+                "sliceName": "nllArticleRegulations",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "http://electronichealth.se/fhir/StructureDefinition/NLLArticleRegulations"
+                        ]
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension",
+                "path": "Medication.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:prescriptiveAuthorityCode",
+                "path": "Medication.extension.extension",
+                "sliceName": "prescriptiveAuthorityCode",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:repeatPrescription",
+                "path": "Medication.extension.extension",
+                "sliceName": "repeatPrescription",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:repeatPrescription.value[x].system",
+                "path": "Medication.extension.extension.value[x].system",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:repeatPrescription.value[x].code",
+                "path": "Medication.extension.extension.value[x].code",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:substitutionDetails",
+                "path": "Medication.extension.extension",
+                "sliceName": "substitutionDetails",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:substitutionDetails.extension",
+                "path": "Medication.extension.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:substitutionDetails.extension:interchangeable",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "interchangeable",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:substitutionDetails.extension:interchangeSubstanceGroup",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "interchangeSubstanceGroup",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:dispensingRestriction",
+                "path": "Medication.extension.extension",
+                "sliceName": "dispensingRestriction",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:dispensingRestriction.value[x].coding",
+                "path": "Medication.extension.extension.value[x].coding",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:dispensingRestriction.value[x].coding.system",
+                "path": "Medication.extension.extension.value[x].coding.system",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:dispensingRestriction.value[x].coding.version",
+                "path": "Medication.extension.extension.value[x].coding.version",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:dispensingRestriction.value[x].coding.code",
+                "path": "Medication.extension.extension.value[x].coding.code",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:dispensingRestriction.value[x].text",
+                "path": "Medication.extension.extension.value[x].text",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:controlledMedicinalProduct",
+                "path": "Medication.extension.extension",
+                "sliceName": "controlledMedicinalProduct",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:narcoticClassification",
+                "path": "Medication.extension.extension",
+                "sliceName": "narcoticClassification",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:narcoticClassification.value[x].coding",
+                "path": "Medication.extension.extension.value[x].coding",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:narcoticClassification.value[x].coding.system",
+                "path": "Medication.extension.extension.value[x].coding.system",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:narcoticClassification.value[x].coding.version",
+                "path": "Medication.extension.extension.value[x].coding.version",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:narcoticClassification.value[x].coding.code",
+                "path": "Medication.extension.extension.value[x].coding.code",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllArticleRegulations.extension:narcoticClassification.value[x].text",
+                "path": "Medication.extension.extension.value[x].text",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllReimbursement",
+                "path": "Medication.extension",
+                "sliceName": "nllReimbursement",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "http://electronichealth.se/fhir/StructureDefinition/NLLReimbursement"
+                        ]
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllReimbursement.extension",
+                "path": "Medication.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.extension:nllReimbursement.extension:eligibleForReimbursement",
+                "path": "Medication.extension.extension",
+                "sliceName": "eligibleForReimbursement",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllReimbursement.extension:restrictedReimbursement",
+                "path": "Medication.extension.extension",
+                "sliceName": "restrictedReimbursement",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllReimbursement.extension:productOfThePeriod",
+                "path": "Medication.extension.extension",
+                "sliceName": "productOfThePeriod",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllReimbursement.extension:productOfThePeriod.extension",
+                "path": "Medication.extension.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.extension:nllReimbursement.extension:productOfThePeriod.extension:currentPeriod",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "currentPeriod",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllReimbursement.extension:productOfThePeriod.extension:unavailable",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "unavailable",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.extension:nllReimbursement.extension:productOfThePeriod.extension:previousPeriod",
+                "path": "Medication.extension.extension.extension",
+                "sliceName": "previousPeriod",
+                "min": 0,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.identifier",
+                "path": "Medication.identifier",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "system"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "comment": "Medicinal products is identified by an NPL-package ID and other products by a Varunr",
+                "min": 1,
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.identifier:nplpackid",
+                "path": "Medication.identifier",
+                "sliceName": "nplpackid",
+                "short": "Medicinal product package ID",
+                "definition": "Unique identifier for a packaged medicinal product (sv: läkemedelsartikel) according to NPL (Nationellt produktregister för läkemedel). A medicinal product can come in more than one package type/size. Each package type/size will have an unique NPL-pack-id but share the same NPL-id.",
+                "comment": "NPL is administered by the Swedish Medical Products Agency (Läkemedelsverket)\nThe similar concepts named SB-pack-id and SB-id are modeled as NPL-pack-id and NPL-id in this resource.",
+                "max": "1",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.identifier:nplpackid.use",
+                "path": "Medication.identifier.use",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.identifier:nplpackid.system",
+                "path": "Medication.identifier.system",
+                "min": 1,
+                "fixedUri": "http://electronichealth.se/fhir/NamingSystem/nplpackid",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.identifier:nplpackid.value",
+                "path": "Medication.identifier.value",
+                "comment": "Maximum string length: 14",
+                "min": 1,
+                "maxLength": 14,
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "NPL pack-id"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.identifier:varunr",
+                "path": "Medication.identifier",
+                "sliceName": "varunr",
+                "short": "Medical consumables Id",
+                "definition": "Unique identifier for medical consumables (sv: handelsvaror).",
+                "comment": "For packaged medicinal products (sv: läkemedelsartiklar) item number is not always unique and can change over time.",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.identifier:varunr.use",
+                "path": "Medication.identifier.use",
+                "short": "official | old",
+                "definition": "Defines if the value (varunr) is the current one or an old one.",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.identifier:varunr.system",
+                "path": "Medication.identifier.system",
+                "min": 1,
+                "fixedUri": "http://electronichealth.se/fhir/NamingSystem/varunr",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.identifier:varunr.value",
+                "path": "Medication.identifier.value",
+                "short": "Medical consumables Id",
+                "definition": "The use element defines if this is the current medical consumables Id (sv. varunummer) or an old Id.",
+                "comment": "Maximum string length: 8",
+                "min": 1,
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "Varunummer"
+                    },
+                    {
+                        "identity": "EHM",
+                        "map": "Historiskt varunummer"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.code",
+                "path": "Medication.code",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.code.coding",
+                "path": "Medication.code.coding",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "system"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Medication.code.coding:atc",
+                "path": "Medication.code.coding",
+                "sliceName": "atc",
+                "short": "ATC",
+                "definition": "Classification of medicinal products according to the Anatomical Therapeutic Chemical (ATC) classification system.",
+                "max": "1",
+                "mustSupport": true,
+                "binding": {
+                    "strength": "required",
+                    "description": "The Anatomical Therapeutic Chemical (ATC) classification system",
+                    "valueSet": "http://www.whocc.no/atc"
+                }
+            },
+            {
+                "id": "Medication.code.coding:atc.system",
+                "path": "Medication.code.coding.system",
+                "fixedUri": "http://www.whocc.no/atc",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.code.coding:atc.version",
+                "path": "Medication.code.coding.version",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.code.coding:atc.code",
+                "path": "Medication.code.coding.code",
+                "min": 1,
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "ATC-kod"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.code.coding:nplId",
+                "path": "Medication.code.coding",
+                "sliceName": "nplId",
+                "short": "Medcinal product Id",
+                "definition": "Unique identifier for a medicinal product (sv: läkemedelsprodukt) according to NPL (Nationellt produktregister för läkemedel). A medicinal product can come in more than one package type/size. Each package type/size will have an unique NPL package Id but share the same NPL Id.",
+                "comment": "NPL is administered by the Swedish Medical Products Agency (Läkemedelsverket)\nThe similar concepts named SB-pack-id and SB-id are modeled as NPL-pack-id and NPL-id in this resource.",
+                "max": "1",
+                "mustSupport": true,
+                "binding": {
+                    "strength": "required",
+                    "description": "NPL Id",
+                    "valueSet": "http://electronichealth.se/fhir/NamingSystem/nplid"
+                }
+            },
+            {
+                "id": "Medication.code.coding:nplId.system",
+                "path": "Medication.code.coding.system",
+                "fixedUri": "http://electronichealth.se/fhir/NamingSystem/nplid",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.code.coding:nplId.version",
+                "path": "Medication.code.coding.version",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.code.coding:nplId.code",
+                "path": "Medication.code.coding.code",
+                "comment": "Maximum string length: 14",
+                "min": 1,
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "NPL-id"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.code.text",
+                "path": "Medication.code.text",
+                "definition": "Plain text representation of the concept as in the textual representation of the ATC code.",
+                "comment": "Maximum string length: 240",
+                "maxLength": 240,
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "ATC-klartext"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.status",
+                "path": "Medication.status",
+                "short": "active | inactive",
+                "definition": "Status defines whether the article is available for dispense or not.",
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "status"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.manufacturer",
+                "path": "Medication.manufacturer",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.manufacturer.display",
+                "path": "Medication.manufacturer.display",
+                "short": "Responsible organisation",
+                "definition": "Name of the organisation responsible for the article",
+                "comment": "Maximum string length: 160",
+                "maxLength": 160,
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "Intressentnamn"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.form",
+                "path": "Medication.form",
+                "short": "Dose form of the medicinal product",
+                "definition": "The authorised pharmaceutical dose form in which the medicinal product is marketed, i.e. tablet, capsule.",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.form.text",
+                "path": "Medication.form.text",
+                "short": "Dose form of the medicinal product",
+                "definition": "The authorised pharmaceutical dose form in which the medicinal product is marketed, i.e. tablet, capsule.",
+                "comment": "Maximum string length: 160",
+                "maxLength": 160,
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "Läkemedelsform"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.amount",
+                "path": "Medication.amount",
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "Förpackningsmängd och enhet"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.amount.extension",
+                "path": "Medication.amount.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Medication.amount.extension:nllDescription",
+                "path": "Medication.amount.extension",
+                "sliceName": "nllDescription",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "http://electronichealth.se/fhir/StructureDefinition/NLLAmountDescription"
+                        ]
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.amount.numerator",
+                "path": "Medication.amount.numerator",
+                "definition": "Amount per package",
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.amount.numerator.value",
+                "path": "Medication.amount.numerator.value",
+                "short": "Amount per package",
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "Förpackningsmängd"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.amount.numerator.unit",
+                "path": "Medication.amount.numerator.unit",
+                "comment": "Maximum string length: 80",
+                "maxLength": 80,
+                "mustSupport": true,
+                "mapping":  [
+                    {
+                        "identity": "EHM",
+                        "map": "Förpackningsenhet"
+                    }
+                ]
+            },
+            {
+                "id": "Medication.amount.denominator",
+                "path": "Medication.amount.denominator",
+                "definition": "The denominator is set to 1 to follow the requirements for a Ratio. It can be interpreted as amount per one package.",
+                "fixedQuantity": {
+                    "value": 1
+                },
+                "mustSupport": true
+            },
+            {
+                "id": "Medication.amount.denominator.value",
+                "path": "Medication.amount.denominator.value",
+                "mustSupport": true
+            }
+        ]
+    }
+}
