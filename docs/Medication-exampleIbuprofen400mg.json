@@ -1,32 +1,16 @@
 {
-  "resourceType": "Medication",
-  "id": "exampleIbuprofen400mg",
-  "meta": {
-    "profile": [
-      "http://electronichealth.se/fhir/StructureDefinition/NLLMedication"
-    ]
+  "resourceType" : "Medication",
+  "id" : "exampleIbuprofen400mg",
+  "meta" : {
+    "profile" : ["http://electronichealth.se/fhir/StructureDefinition/NLLMedication"]
   },
-  "identifier": [
-    {
-      "system": "http://example.org/fake-medication-system",
-      "value": "ibu400"
-    }
-  ],
-  "ingredient": [
-    {
-      "itemCodeableConcept": {
-        "text": "Ibuprofen"
-      },
-      "strength": {
-        "numerator": {
-          "value": 400,
-          "unit": "mg"
-        },
-        "denominator": {
-          "value": 1,
-          "unit": "tablet"
-        }
-      }
-    }
-  ]
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication exampleIbuprofen400mg</b></p><a name=\"exampleIbuprofen400mg\"> </a><a name=\"hcexampleIbuprofen400mg\"> </a><a name=\"exampleIbuprofen400mg-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NLLMedicationSnapshot.html\">NLLMedication</a></p></div><p><b>identifier</b>: <code>http://example.org/fake-medication-system</code>/ibu400</p><blockquote><p><b>ingredient</b></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://example.org/fake-medication-system",
+    "value" : "ibu400"
+  }],
+  "ingredient" : [null]
 }

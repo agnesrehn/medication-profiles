@@ -1,0 +1,733 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/FollowUpVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FollowUp",
+      "title" : "Follow Up",
+      "description" : "This is a valueset for Follow up",
+      "systems" : ["https://www.snomed.org/what-is-snomed-ct"],
+      "uses" : {
+      },
+      "StructureDefinition-FollowUpExtension.id.html" : "Follow Up"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdditionalDosageInstructions",
+      "title" : "SNOMED CT Additional Dosage Instructions",
+      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.95"],
+      "sources" : ["2.16.840.1.113883.4.642.3.95"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdministrationMethodCodes",
+      "title" : "SNOMED CT Administration Method Codes",
+      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+      "sources" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-subpotent-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationSubpotentReason",
+      "title" : "MedicationAdministration Subpotent Reason",
+      "description" : "MedicationAdministration Subpotent Reason",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/administration-subpotent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3128"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3128"],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-MyPatient.html" : "MyPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-MyPatient.html" : "MyPatient",
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2",
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTAnatomicalStructureAdministrationSites",
+      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.346"],
+      "sources" : ["2.16.840.1.113883.4.642.3.346"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ConditionProblemDiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.161",
+        "2.16.840.1.113883.4.642.2.72",
+        "2.16.840.1.113883.4.642.3.152"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "Days Of Week",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.2.302",
+        "2.16.840.1.113883.4.642.3.506"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.512",
+        "2.16.840.1.113883.4.642.2.302",
+        "2.16.840.1.113883.4.642.3.506"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/event-timing",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "EventTiming",
+      "title" : "EventTiming",
+      "description" : "Real-world event relating to the schedule.",
+      "systems" : [
+        "http://hl7.org/fhir/event-timing",
+        "http://terminology.hl7.org/CodeSystem/v3-TimingEvent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.75"],
+      "sources" : ["2.16.840.1.113883.4.642.3.75"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierTypeCodes",
+      "title" : "Identifier Type Codes",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-MyPatient.html" : "MyPatient",
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2",
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "Link Type",
+      "description" : "The type of link between this Patient resource and another Patient/RelatedPerson resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.3.423",
+        "2.16.840.1.113883.4.642.3.412"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.3.423",
+        "2.16.840.1.113883.4.642.3.412"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MyPatient.html" : "MyPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MaritalStatusCodes",
+      "title" : "Marital Status Codes",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-MyPatient.html" : "MyPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationPerformerFunctionCodes",
+      "title" : "MedicationAdministration Performer Function Codes",
+      "description" : "MedicationAdministration Performer Function Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/med-admin-perform-function"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.349"],
+      "sources" : ["2.16.840.1.113883.4.642.3.349"],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-admin-location",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationLocationCodes",
+      "title" : "MedicationAdministration Location Codes",
+      "description" : "MedicationAdministration Location Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medication-admin-location"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3127"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3127"],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-admin-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationStatusCodes",
+      "title" : "MedicationAdministration Status Codes",
+      "description" : "MedicationAdministration Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-admin-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.186",
+        "2.16.840.1.113883.4.642.3.340",
+        "2.16.840.1.113883.4.642.3.330"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.186",
+        "2.16.840.1.113883.4.642.3.340",
+        "2.16.840.1.113883.4.642.3.330"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2",
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-dose-aid",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationDoseAids",
+      "title" : "Medication Dose Aids",
+      "description" : "Medication Dose Aids",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-dose-aid"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3241"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.359",
+        "2.16.840.1.113883.4.642.2.198",
+        "2.16.840.1.113883.4.642.3.374"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.359",
+        "2.16.840.1.113883.4.642.2.198",
+        "2.16.840.1.113883.4.642.3.374"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-ingredientstrength",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationIngredientStrengthCodes",
+      "title" : "Medication Ingredient Strength Codes",
+      "description" : "Medication Ingredient Strength Codes",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/medication-ingredientstrength"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1953"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1953"],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-intended-performer-role",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationIntendedPerformerRole",
+      "title" : "Medication Intended Performer Role",
+      "description" : "Medication Intended Performer Role",
+      "systems" : [
+        "http://hl7.org/fhir/CodeSystem/medication-intended-performer-role"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1979"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1979"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationStatusCodes",
+      "title" : "Medication Status Codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.376",
+        "2.16.840.1.113883.4.642.3.363"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.376",
+        "2.16.840.1.113883.4.642.3.363"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestAdministrationLocationCodes",
+      "title" : "medicationRequest Administration Location Codes",
+      "description" : "MedicationRequest Administration Location Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3242"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3242"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "medicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestIntent",
+      "title" : "medicationRequest Intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationrequestStatus",
+      "title" : "medicationrequest Status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestStatusReasonCodes",
+      "title" : "medicationRequest Status Reason Codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/narrative-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "NarrativeStatus",
+      "title" : "NarrativeStatus",
+      "description" : "The status of a resource narrative.",
+      "systems" : ["http://hl7.org/fhir/narrative-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.55"],
+      "sources" : ["2.16.840.1.113883.4.642.3.55"],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-MyPatient.html" : "MyPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ReasonMedicationGivenCodes",
+      "title" : "Reason Medication Given Codes",
+      "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/reason-medication-given"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.344",
+        "2.16.840.1.113883.4.642.3.334",
+        "2.16.840.1.113883.4.642.2.188"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.344",
+        "2.16.840.1.113883.4.642.3.334",
+        "2.16.840.1.113883.4.642.2.188"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTReasonMedicationNotGivenCodes",
+      "title" : "SNOMED CT Reason Medication Not Given Codes",
+      "description" : "This value set includes all medication refused, medication not administered, and non-administration of necessary drug or medicine codes from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.342",
+        "2.16.840.1.113883.4.642.3.332",
+        "2.16.840.1.113883.4.642.2.187"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.342",
+        "2.16.840.1.113883.4.642.3.332",
+        "2.16.840.1.113883.4.642.2.187"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "TimingAbbreviation",
+      "title" : "TimingAbbreviation",
+      "description" : "Code for a known / defined timing pattern.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+        "http://terminology.hl7.org/CodeSystem/timing-abbreviation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.78"],
+      "sources" : ["2.16.840.1.113883.4.642.3.78"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "UnitsOfTime",
+      "title" : "UnitsOfTime",
+      "description" : "A unit of time (units from UCUM).",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.77"],
+      "sources" : ["2.16.840.1.113883.4.642.3.77"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/dose-rate-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.981"],
+      "sources" : ["2.16.840.1.113883.4.642.3.981"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-my-MyDosage2.html" : "My Dosage2"
+    }
+  ]
+}

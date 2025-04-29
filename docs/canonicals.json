@@ -1,0 +1,93 @@
+[
+  {
+    "id" : "NLLMedication",
+    "type" : "StructureDefinition",
+    "url" : "http://electronichealth.se/fhir/StructureDefinition/NLLMedication",
+    "version" : "0.1.0",
+    "name" : "NLLMedication"
+  },
+  {
+    "id" : "NLLMedicationSnapshot",
+    "type" : "StructureDefinition",
+    "url" : "http://electronichealth.se/fhir/StructureDefinition/NLLMedication",
+    "version" : "0.1.0",
+    "name" : "NLLMedication"
+  },
+  {
+    "id" : "medicationprofiles.id",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/medicationprofiles.id",
+    "version" : "0.1.0",
+    "name" : "MedicationProfiles"
+  },
+  {
+    "id" : "FollowUpExtension.id",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/FollowUpExtension.id",
+    "version" : "0.1.0",
+    "name" : "FollowUpExtension"
+  },
+  {
+    "id" : "MyPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/MyPatient",
+    "version" : "0.1.0",
+    "name" : "MyPatient"
+  },
+  {
+    "id" : "SiteQualifier",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/SiteQualifier",
+    "version" : "0.1.0",
+    "name" : "SiteQualifier"
+  },
+  {
+    "id" : "goal-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/goal-extension",
+    "version" : "0.1.0",
+    "name" : "GoalExtension"
+  },
+  {
+    "id" : "my-MyDosage",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/my-MyDosage",
+    "version" : "0.1.0",
+    "name" : "MyDosage"
+  },
+  {
+    "id" : "my-MyDosage2",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/my-MyDosage2",
+    "version" : "0.1.0",
+    "name" : "MyDosage2"
+  },
+  {
+    "id" : "my-MyMedication",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/my-MyMedication",
+    "version" : "0.1.0",
+    "name" : "MyMedication"
+  },
+  {
+    "id" : "my-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/my-medicationrequest",
+    "version" : "0.1.0",
+    "name" : "MyMedicationRequest"
+  },
+  {
+    "id" : "self-administration",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/self-administration",
+    "version" : "0.1.0",
+    "name" : "SelfAdministration"
+  },
+  {
+    "id" : "FollowUpVs",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/FollowUpVs",
+    "version" : "0.1.0",
+    "name" : "FollowUp"
+  }
+]

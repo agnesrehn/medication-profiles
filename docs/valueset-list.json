@@ -1,0 +1,13 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/FollowUpVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FollowUp",
+      "title" : "Follow Up",
+      "description" : "This is a valueset for Follow up",
+      "systems" : ["https://www.snomed.org/what-is-snomed-ct"]
+    }
+  ]
+}

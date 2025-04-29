@@ -1,0 +1,3519 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>IP Review</title>
+    <link rel="stylesheet" href="fhir.css"/>
+  </head>
+  <body>
+    <h2>Unattributed Code Systems</h2>
+    <ul></ul>
+    <h2>Copyright Fragment</h2>
+    <p style="color: maroon">
+      <b>This fragment is not visible to the reader</b>
+    </p>
+    <div>No use of external IP (other than from the FHIR specification)</div>
+    <h2>Copyright and Registered Trademark Uses</h2>
+    <ul>
+      <li>
+
+          IG &copy; 2025+ Agnes Rehn, master thesis at Karolinska Institutet.  Package medicationprofiles.id#0.1.0 based on FHIR 5.0.0. Generated 2025-04-29 
+          
+          
+                      Links: Table of Contents |
+                 QA Report
+                 
+                
+           
+         (        <a href="toc.html">src</a>
+)
+      </li>
+      <li>
+
+          hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide   &reg;&copy; HL7 |
+             
+                CC0
+         (        <a href="searchform.html">src</a>
+)
+      </li>
+      <li>
+MedicationProfiles - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
+)
+      </li>
+      <li>
+There are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, "Ondansetron 8mg orally or IV twice a day as needed for nausea" or "Compazine&reg; (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed. In general, each prescribed drug will be a separate Medication Request. (        <a href="StructureDefinition-my-medicationrequest-definitions.html">src</a>
+)
+      </li>
+    </ul>
+    <h2>External References</h2>
+    <table class="grid">
+      <tr>
+        <th>
+          <b>Type</b>
+        </th>
+        <th>
+          <b>Reference</b>
+        </th>
+        <th>
+          <b>Content</b>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication.html">web</a>
+        </td>
+        <td>
+          <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">gematik.de</a>
+        </td>
+        <td>
+          <span style="opacity: 0.5">The ingredient (substance or medication) that the ingredient.strength relates to</span>
+          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs</a>
+ (          <a href="http://hl7.org/fhir/R5/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.whocc.no/atc">www.whocc.no</a>
+        </td>
+        <td>
+ATC          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="http://www.whocc.no/atc">http://www.whocc.no/atc</a>
+ (          <a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>
+): The Anatomical Therapeutic Chemical (ATC) classification system          <br/>
+          <br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.html">web</a>
+        </td>
+        <td>
+          <a href="http://electronichealth.se/fhir/NamingSystem/nplid">electronichealth.se</a>
+        </td>
+        <td>
+Medcinal product Id          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="http://electronichealth.se/fhir/NamingSystem/nplid">http://electronichealth.se/fhir/NamingSystem/nplid</a>
+ (          <a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>
+): NPL Id          <br/>
+          <br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Medication-exampleIbuprofen400mg.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Medication-exampleIbuprofen400mg.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l323">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Medication-exampleIbuprofen400mg.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l342">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Medication-exampleIbuprofen400mg.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l354">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Medication-exampleIbuprofen400mg.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l350">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-PatientExample.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-PatientExample.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l315">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-PatientExample.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l339">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-PatientExample.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l351">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-PatientExample.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l350">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-FollowUpExtension.id-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1639">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-FollowUpExtension.id-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l365">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-FollowUpExtension.id-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-FollowUpExtension.id.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1277">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-FollowUpExtension.id.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-FollowUpExtension.id.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l883">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-FollowUpExtension.id.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1365">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-FollowUpExtension.id.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1314">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-MyPatient-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5351">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-MyPatient-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l344">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-MyPatient-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1167">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-MyPatient-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l340">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-MyPatient.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5299">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-MyPatient.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l313">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-MyPatient.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l4690">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-MyPatient.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l8706">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-MyPatient.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l8718">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.whocc.no/atc">www.whocc.no</a>
+        </td>
+        <td>
+The codes SHALL be taken from           <span style="color:DarkGray;text-decoration:line-through">For codes, see </span>
+           <a href="http://www.whocc.no/atc">http://www.whocc.no/atc</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R5/terminologies.html#required">required</a>
+ to           <span class="copy-text-inline">
+<code>http://www.whocc.no/atc</code><button data-clipboard-text="http://www.whocc.no/atc" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://electronichealth.se/fhir/NamingSystem/nplid">electronichealth.se</a>
+        </td>
+        <td>
+The codes SHALL be taken from           <span style="color:DarkGray;text-decoration:line-through">For codes, see </span>
+           <a href="http://electronichealth.se/fhir/NamingSystem/nplid">http://electronichealth.se/fhir/NamingSystem/nplid</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R5/terminologies.html#required">required</a>
+ to           <span class="copy-text-inline">
+<code>http://electronichealth.se/fhir/NamingSystem/nplid</code><button data-clipboard-text="http://electronichealth.se/fhir/NamingSystem/nplid" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.whocc.no/atc">www.whocc.no</a>
+        </td>
+        <td>
+The codes SHALL be taken from            <a href="http://www.whocc.no/atc">http://www.whocc.no/atc</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R5/terminologies.html#required">required</a>
+ to           <span class="copy-text-inline">
+<code>http://www.whocc.no/atc</code><button data-clipboard-text="http://www.whocc.no/atc" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://electronichealth.se/fhir/NamingSystem/nplid">electronichealth.se</a>
+        </td>
+        <td>
+The codes SHALL be taken from            <a href="http://electronichealth.se/fhir/NamingSystem/nplid">http://electronichealth.se/fhir/NamingSystem/nplid</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R5/terminologies.html#required">required</a>
+ to           <span class="copy-text-inline">
+<code>http://electronichealth.se/fhir/NamingSystem/nplid</code><button data-clipboard-text="http://electronichealth.se/fhir/NamingSystem/nplid" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l35785">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l312">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1935">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.whocc.no/atc">www.whocc.no</a>
+        </td>
+        <td>
+ATC          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="http://www.whocc.no/atc">http://www.whocc.no/atc</a>
+ (          <a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>
+): The Anatomical Therapeutic Chemical (ATC) classification system          <br/>
+          <br/>
+          <br/>
+          <span style="font-weight:bold">ele-1: </span>
+All FHIR elements must have a @value or children          <br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.html">web</a>
+        </td>
+        <td>
+          <a href="http://electronichealth.se/fhir/NamingSystem/nplid">electronichealth.se</a>
+        </td>
+        <td>
+Medcinal product Id          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="http://electronichealth.se/fhir/NamingSystem/nplid">http://electronichealth.se/fhir/NamingSystem/nplid</a>
+ (          <a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>
+): NPL Id          <br/>
+          <br/>
+          <br/>
+          <span style="font-weight:bold">ele-1: </span>
+All FHIR elements must have a @value or children          <br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.whocc.no/atc">www.whocc.no</a>
+        </td>
+        <td>
+          <a style="opacity: 1.0" href="http://www.whocc.no/atc">http://www.whocc.no/atc</a>
+          <div>
+            <code>http://www.whocc.no/atc</code>
+            <button data-clipboard-text="http://www.whocc.no/atc" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.html">web</a>
+        </td>
+        <td>
+          <a href="http://electronichealth.se/fhir/NamingSystem/nplid">electronichealth.se</a>
+        </td>
+        <td>
+          <a style="opacity: 1.0" href="http://electronichealth.se/fhir/NamingSystem/nplid">http://electronichealth.se/fhir/NamingSystem/nplid</a>
+          <div>
+            <code>http://electronichealth.se/fhir/NamingSystem/nplid</code>
+            <button data-clipboard-text="http://electronichealth.se/fhir/NamingSystem/nplid" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l64354">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l19255">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l36768">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedication.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l38589">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedicationSnapshot-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l34082">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedicationSnapshot-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l312">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedicationSnapshot-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1963">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedicationSnapshot-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedicationSnapshot.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l63878">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedicationSnapshot.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedicationSnapshot.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l19015">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedicationSnapshot.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l36360">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-NLLMedicationSnapshot.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l38211">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-SiteQualifier-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l2067">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-SiteQualifier-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l372">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-SiteQualifier-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-SiteQualifier.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1336">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-SiteQualifier.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-SiteQualifier.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l997">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-SiteQualifier.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1569">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-SiteQualifier.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1521">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-goal-extension-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1597">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-goal-extension-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l365">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-goal-extension-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-goal-extension.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1202">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-goal-extension.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-goal-extension.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l865">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-goal-extension.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1329">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-goal-extension.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1284">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l6183">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l312">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l826">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5963">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l4762">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l8793">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l8652">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage2-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10789">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage2-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l312">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage2-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1243">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage2-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage2.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l9085">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage2.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage2.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10336">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage2.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l19437">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyDosage2.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l19152">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">gematik.de</a>
+        </td>
+        <td>
+The codes SHOULD be taken from           <span style="color:DarkGray;text-decoration:line-through">For example codes, see </span>
+           <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs</a>
+          <span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/medication-codes</span>
+          <br/>
+(          <a href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a>
+ to           <span class="copy-text-inline">
+<code>https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs</code><button data-clipboard-text="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">gematik.de</a>
+        </td>
+        <td>
+The codes SHOULD be taken from            <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a>
+ to           <span class="copy-text-inline">
+<code>https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs</code><button data-clipboard-text="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l31699">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l312">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1838">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication.html">web</a>
+        </td>
+        <td>
+          <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">gematik.de</a>
+        </td>
+        <td>
+The ingredient (substance or medication) that the ingredient.strength relates to          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs</a>
+ (          <a href="http://hl7.org/fhir/R5/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>
+)          <br/>
+          <span style="font-weight:bold">ele-1: </span>
+All FHIR elements must have a @value or children
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication.html">web</a>
+        </td>
+        <td>
+          <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">gematik.de</a>
+        </td>
+        <td>
+          <a style="opacity: 1.0" href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs</a>
+          <div>
+            <code>https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs</code>
+            <button data-clipboard-text="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication.html">web</a>
+        </td>
+        <td>
+          <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">gematik.de</a>
+        </td>
+        <td>
+The ingredient (substance or medication) that the ingredient.strength relates to          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs">https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs</a>
+ (          <a href="http://hl7.org/fhir/R5/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l57507">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l17575">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l33516">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-MyMedication.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l35376">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-medicationrequest-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l12899">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-medicationrequest-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l312">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-medicationrequest-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1379">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-medicationrequest-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-medicationrequest.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l12005">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-medicationrequest.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-medicationrequest.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l11020">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-medicationrequest.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l20706">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-my-medicationrequest.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l20397">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-self-administration-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l2075">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-self-administration-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l372">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-self-administration-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-self-administration.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1336">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-self-administration.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-self-administration.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1000">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-self-administration.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1575">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-self-administration.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1527">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-FollowUpVs-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l318">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-FollowUpVs.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-FollowUpVs.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l476">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-FollowUpVs.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l393">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-FollowUpVs.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l444">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-FollowUpVs.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l449">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="artifacts.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l569">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l311">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="toc.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l393">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Agnes Rehn, master thesis at Karolinska Institutet</a>
+.  Package medicationprofiles.id#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>
+. Generated           <span title="Tue, Apr 29, 2025 20:38+0200">2025-04-29</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+    </table>
+    <h2>Internal Images</h2>
+    <table class="grid"></table>
+  </body>
+</html>
