@@ -1,47 +1,52 @@
 Profile: MyDosage
-Parent: MedicationAdministration
+Parent: MedicationRequest
 Id: my-MyDosage
 Title: "My Dosage"
-Description: "A Profile based on MedicationAdministration describing the dosage in medication orders, for example xxxx"
+Description: "A Profile based on MedicationRequest describing the dosage in medication orders, for example morphine administered at a rate of 2 mg/hour"
 
+//medicationRate
+* dosageInstruction.doseAndRate.rate[x] 0..1
 
-//placeOfMedication: No changes
+//administrationDuration: no changes
 
-//precisionOfPlaceOfAdministration: gör som nll (en xtension: Dosage.extension:nllSiteQualifier
-* extension contains SiteQualifier named SiteQualifier 0..1
+//doseQuantity: No changes
 
-//medicalTechnicalProuct:
-* device 0..1
+//administrationDuration: No changes  
 
-//selfAdminstered: Extension 
-* extension contains self-administration named SelfAdministration 0..1
+//when
+* dosageInstruction.timing.repeat.when 0..1
 
-//administrationinstruction ev extension???
-* note 0..1
+//offset: No changes
 
-//administrationroute: No changes
-
-//adminstrationMethod: No changes
-
-//Delete from Parent
-* category 0..0
+//Delete from parent:
+* priorPrescription 0..0
 * statusReason 0..0
-* encounter 0..0 
+* statusChanged 0..0
+* category 0..0 
+* priority 0..0
 * supportingInformation 0..0
-* recorded 0..0 
+* authoredOn 0..0 
+* reported 0..0
+* performerType 0..0
+* performer 0..0
+* device 0..0
 * reason 0..0
+* courseOfTherapyType 0..0
+* insurance 0..0
+* note 0..0
+* effectiveDosePeriod 0..0
+* dispenseRequest 0..0
+* dispenseRequest.initialFill 0..0
+* dispenseRequest.numberOfRepeatsAllowed 0..0
+* dispenseRequest.quantity 0..0
 
-
-//NY PARENT --> MyDosage2
 
 /*
-Obligatoriska: status, medication, subject, occurence[x],actor
+obligatoriskt: status, intent, medication, suvject, substitution allowed
 Instance: exampleMyDosage
 InstanceOf: MyDosage
 Usage: #Example
-* medication.reference = "Medication/example"
-* subject.reference = "Patient/example-patient"
-* occurrenceDateTime = "2025-04-28T10:00:00+00:00"
-* extension[SelfAdministration].valueBoolean = false
-* note[0].text = "5 mg Every 4 hours for pain relief"
+* dosageInstruction.doseAndRate.rate[0].value = 1
+* dosageInstruction.doseAndRate.rate[0].unit = "tablet"
+* dosageInstruction.timing.repeat.when = "Morning"
 */

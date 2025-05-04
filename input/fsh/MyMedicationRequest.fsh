@@ -1,3 +1,4 @@
+//Valueset for the codes in the extension "Follow Up"
 Alias: $SCT = https://www.snomed.org/what-is-snomed-ct
 ValueSet: FollowUp
 Id: FollowUpVs
@@ -7,18 +8,12 @@ Description: "This is a valueset for Follow up"
 * $SCT#448337001 "telemedicinkonsultation med patient" 
 * $SCT#390906007 "uppföljande kontakt"
 
-Extension: FollowUpExtension
-Id: FollowUpExtension.id
-Title: "Follow Up"
-Description: "This is an extension for follow up"
-* value[x] only CodeableConcept
-* value[x] from FollowUpVs
 
 Profile: MyMedicationRequest
 Parent: MedicationRequest
 Id: my-medicationrequest
 Title: "My MedicationRequest"
-Description: "A profile based on MedicationRequest."
+Description: "A profile based on MedicationRequest for example a 10-day antibiotic treatment with the treatment goal to reduce infection markers."
 
 //Start and end date
 * dosageInstruction.timing.repeat.boundsPeriod.start MS
@@ -28,10 +23,8 @@ Description: "A profile based on MedicationRequest."
 * substitution.allowed[x] only boolean 
 * substitution.allowedBoolean MS
 
-//Follow up + follow up time - extension den klagar på sättet jag satt upp koderna. 
-
-* extension contains FollowUpExtension.id named FollowUp 0..1
-
+//Follow up + follow up time 
+* extension contains FollowUpExtension named followUp 0..1
 
 //Goal: See extension 
 * extension contains goal-extension named treatmentGoal 0..1
@@ -63,7 +56,7 @@ Description: "A profile based on MedicationRequest."
 
 //treatmentInterval: No changes
 
-//Period ???? samma som start date
+//Period : No changes 
 
 //StartCondition: No changes
 

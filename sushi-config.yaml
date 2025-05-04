@@ -18,7 +18,7 @@ releaseLabel: R5
 publisher:
   name: Agnes Rehn, master thesis at Karolinska Institutet
   url: http://example.org/example-publisher
- 
+
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the

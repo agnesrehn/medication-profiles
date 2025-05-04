@@ -5,7 +5,7 @@ Profile: MyMedication
 Parent: $NLLMedication
 Id: my-MyMedication
 Title: "My Medication"
-Description: "A Profile based on NLLMedication describing the medication in medication orders, for example xxxx"
+Description: "A Profile based on NLLMedication describing the medication in medication orders, for example Ibuprofen 400 mg tablet"
 
 //ProductID: No changes
 
@@ -14,17 +14,16 @@ Description: "A Profile based on NLLMedication describing the medication in medi
 
 //medicationForm: No changes 
 
-//strengthDesignation 
-* ingredient.strength 1..1 MS
+//strengthDesignation: No changes
+
 
 //ATCCode: No changes
 
 //Substance Name 
 
 //Substance Name 
-* ingredient.item[x] only CodeableConcept
-* ingredient.itemCodeableConcept MS
-* ingredient.itemCodeableConcept from https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs (preferred)
+* ingredient.item[x] MS
+* ingredient.item[x] from https://gematik.de/fhir/terminology/ValueSet/ti-substance-snomed-ct-vs (preferred)
 
 //Delete from parent (not done) 
 
@@ -51,20 +50,9 @@ Usage: #Example
 
 
 /*/Frågelådan 
-1.ändra datatyp som inte redan finns färdig
-3. valueset när jag inte ska länka till färdigt system? eller kan jag göra det ist?
-*/
 
-//Fråga: behöver jag ta bort fält från ursprungliga NLLMedication etc typ sätta 0..0?svar ja disutera i diskussiondelen
 //Har lagt in eget id för NLLMedication.json och NLLMedicationSnapshopt.json
-//Url:er???? måste ha en på varje extension : tobias återkommer
-//ig publisher? fråga thomas 
-//Strength??=ta bort strenth
-//precisionOfPlaceOfAdministration i MyDosage: gör som nll (en xtension: Dosage.extension:nllSiteQualifier dock vet jag ej hur jag kopplar till kodverk så har endast lagt det som string
-//administrationDuration i mydosage2: No changes   samma som number of times...??? fråga!!
 //länken till snomedct i mitt valueset?
-//Hur lägga till datetime i followup(medicationrequest)
-//ska ta bort ält i medication: Hur referera till exteions, denna hittar inte pathen : Medication.extension:nllArticleAvailability.extension:onTheMarket
-//Om det varit karidnalitet 1..1 och jag velat ta bort denna har det inte gått. 
+//ska ta bort fält i medication: Hur referera till exteions, denna hittar inte pathen : Medication.extension:nllArticleAvailability.extension:onTheMarket
 //ta bort staryt datum och slut ocj lägg in det i peroid i medicationrequest ist. vad mena T? bilden är som jag gjort förut eller? Måste jag ocså göra det som MS?
 ////ev då ist dela upp det period (decimal) sen period max, period unit()*/
