@@ -14,7 +14,7 @@
   "name" : "SelfAdministration",
   "title" : "Self Administration",
   "status" : "draft",
-  "date" : "2025-04-29T20:38:23+02:00",
+  "date" : "2025-05-05T10:23:37+02:00",
   "publisher" : "Agnes Rehn, master thesis at Karolinska Institutet",
   "contact" : [{
     "name" : "Agnes Rehn, master thesis at Karolinska Institutet",
@@ -34,7 +34,7 @@
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "http://example.org/StructureDefinition/my-MyDosage#MedicationAdministration"
+    "expression" : "http://example.org/StructureDefinition/my-MyDosageAdministration#MedicationAdministration"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",

@@ -10,7 +10,7 @@
       "systems" : ["https://www.snomed.org/what-is-snomed-ct"],
       "uses" : {
       },
-      "StructureDefinition-FollowUpExtension.id.html" : "Follow Up"
+      "StructureDefinition-followup-extension.html" : "Follow Up"
     }
   ]
 }

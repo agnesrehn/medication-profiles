@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "MedicationProfiles",
   "status" : "draft",
-  "date" : "2025-04-29T20:38:23+02:00",
+  "date" : "2025-05-05T10:23:37+02:00",
   "publisher" : "Agnes Rehn, master thesis at Karolinska Institutet",
   "contact" : [{
     "name" : "Agnes Rehn, master thesis at Karolinska Institutet",
@@ -29,7 +29,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "6.2.0"
+    "version" : "6.3.0"
   },
   {
     "id" : "hl7ext",
@@ -63,10 +63,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/FollowUpExtension.id"
+        "reference" : "StructureDefinition/followup-extension"
       },
       "name" : "Follow Up",
-      "description" : "This is an extension for follow up",
+      "description" : "An extension to represent the type and timing of follow-up.",
       "isExample" : false
     },
     {
@@ -90,7 +90,7 @@
         "reference" : "StructureDefinition/my-MyDosage"
       },
       "name" : "My Dosage",
-      "description" : "A Profile based on MedicationAdministration describing the dosage in medication orders, for example xxxx",
+      "description" : "A Profile based on MedicationRequest describing the dosage in medication orders, for example morphine administered at a rate of 2 mg/hour",
       "isExample" : false
     },
     {
@@ -99,10 +99,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/my-MyDosage2"
+        "reference" : "StructureDefinition/my-MyDosageAdministration"
       },
-      "name" : "My Dosage2",
-      "description" : "A Profile based on MedicationRequest describing the dosage in medication orders, for example xxxx",
+      "name" : "My DosageAdministration",
+      "description" : "A Profile based on MedicationAdministration describing the administration of the dosage in medication orders, for example self-administred insulin injection using a prefilled pen in the abdomen",
       "isExample" : false
     },
     {
@@ -114,7 +114,7 @@
         "reference" : "StructureDefinition/my-MyMedication"
       },
       "name" : "My Medication",
-      "description" : "A Profile based on NLLMedication describing the medication in medication orders, for example xxxx",
+      "description" : "A Profile based on NLLMedication describing the medication in medication orders, for example Ibuprofen 400 mg tablet",
       "isExample" : false
     },
     {
@@ -126,7 +126,7 @@
         "reference" : "StructureDefinition/my-medicationrequest"
       },
       "name" : "My MedicationRequest",
-      "description" : "A profile based on MedicationRequest.",
+      "description" : "A profile based on MedicationRequest for example a 10-day antibiotic treatment with the treatment goal to reduce infection markers.",
       "isExample" : false
     },
     {

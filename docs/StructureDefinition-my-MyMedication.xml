@@ -17,7 +17,7 @@
   <name value="MyMedication"/>
   <title value="My Medication"/>
   <status value="draft"/>
-  <date value="2025-04-29T20:38:23+02:00"/>
+  <date value="2025-05-05T10:23:37+02:00"/>
   <publisher value="Agnes Rehn, master thesis at Karolinska Institutet"/>
   <contact>
     <name value="Agnes Rehn, master thesis at Karolinska Institutet"/>
@@ -26,7 +26,7 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
-  <description value="A Profile based on NLLMedication describing the medication in medication orders, for example xxxx"/>
+  <description value="A Profile based on NLLMedication describing the medication in medication orders, for example Ibuprofen 400 mg tablet"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="EHM"/>

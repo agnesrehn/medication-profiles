@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "MyMedication"] ; # 
   fhir:title [ fhir:v "My Medication"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-04-29T20:38:23+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-05T10:23:37+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet" ] ;
@@ -27,7 +27,7 @@
        fhir:value [ fhir:v "http://example.org/example-publisher" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "A Profile based on NLLMedication describing the medication in medication orders, for example xxxx"] ; # 
+  fhir:description [ fhir:v "A Profile based on NLLMedication describing the medication in medication orders, for example Ibuprofen 400 mg tablet"] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "EHM" ] ;

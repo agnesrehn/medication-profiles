@@ -198,7 +198,7 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1069"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.2.0/ValueSet-dose-rate-type.html" : "DoseAndRateType"
+      "http://terminology.hl7.org/6.3.0/ValueSet-dose-rate-type.html" : "DoseAndRateType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
@@ -317,7 +317,7 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.2.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+      "http://terminology.hl7.org/6.3.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
@@ -377,7 +377,7 @@
       "oids" : ["2.16.840.1.113883.5.1070"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.2.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+      "http://terminology.hl7.org/6.3.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
     },
     {
       "url" : "http://unitsofmeasure.org",
@@ -401,8 +401,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages",
-      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages"
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
     }
   ]
 }

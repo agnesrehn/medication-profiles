@@ -21,13 +21,6 @@
     "name" : "MedicationProfiles"
   },
   {
-    "id" : "FollowUpExtension.id",
-    "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/FollowUpExtension.id",
-    "version" : "0.1.0",
-    "name" : "FollowUpExtension"
-  },
-  {
     "id" : "MyPatient",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/MyPatient",
@@ -40,6 +33,13 @@
     "url" : "http://example.org/StructureDefinition/SiteQualifier",
     "version" : "0.1.0",
     "name" : "SiteQualifier"
+  },
+  {
+    "id" : "followup-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/followup-extension",
+    "version" : "0.1.0",
+    "name" : "FollowUpExtension"
   },
   {
     "id" : "goal-extension",
@@ -56,11 +56,11 @@
     "name" : "MyDosage"
   },
   {
-    "id" : "my-MyDosage2",
+    "id" : "my-MyDosageAdministration",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/my-MyDosage2",
+    "url" : "http://example.org/StructureDefinition/my-MyDosageAdministration",
     "version" : "0.1.0",
-    "name" : "MyDosage2"
+    "name" : "MyDosageAdministration"
   },
   {
     "id" : "my-MyMedication",

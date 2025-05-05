@@ -10,7 +10,7 @@
   "name" : "MyMedication",
   "title" : "My Medication",
   "status" : "draft",
-  "date" : "2025-04-29T20:38:23+02:00",
+  "date" : "2025-05-05T10:23:37+02:00",
   "publisher" : "Agnes Rehn, master thesis at Karolinska Institutet",
   "contact" : [{
     "name" : "Agnes Rehn, master thesis at Karolinska Institutet",
@@ -19,7 +19,7 @@
       "value" : "http://example.org/example-publisher"
     }]
   }],
-  "description" : "A Profile based on NLLMedication describing the medication in medication orders, for example xxxx",
+  "description" : "A Profile based on NLLMedication describing the medication in medication orders, for example Ibuprofen 400 mg tablet",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "EHM",

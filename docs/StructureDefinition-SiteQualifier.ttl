@@ -25,7 +25,7 @@
   fhir:name [ fhir:v "SiteQualifier"] ; # 
   fhir:title [ fhir:v "Qualified Administration Site"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-04-29T20:38:23+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-05T10:23:37+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet" ] ;
@@ -45,7 +45,7 @@
   fhir:abstract [ fhir:v false] ; # 
   fhir:context ( [
      fhir:type [ fhir:v "element" ] ;
-     fhir:expression [ fhir:v "http://example.org/StructureDefinition/my-MyDosage#MedicationAdministration" ]
+     fhir:expression [ fhir:v "http://example.org/StructureDefinition/my-MyDosageAdministration#MedicationAdministration" ]
   ] ) ; # 
   fhir:type [ fhir:v "Extension"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
