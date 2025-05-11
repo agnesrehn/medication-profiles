@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MedicationProfiles"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-05T10:23:37+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-11T16:39:14+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet" ] ;
@@ -81,7 +81,12 @@
          fhir:reference [ fhir:v "Medication/exampleIbuprofen400mg" ]
        ] ;
        fhir:name [ fhir:v "exampleIbuprofen400mg" ] ;
-       fhir:isExample [ fhir:v true ]
+       fhir:description [ fhir:v "This instance describes how a medication order for 1 talet of Ibuprofen with the strength 400 mg, could be structured" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://example.org/StructureDefinition/my-MyMedication"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/my-MyMedication>
+       ] )
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -109,7 +114,7 @@
          fhir:link <http://example.org/ValueSet/FollowUpVs> ;
          fhir:reference [ fhir:v "ValueSet/FollowUpVs" ]
        ] ;
-       fhir:name [ fhir:v "Follow Up" ] ;
+       fhir:name [ fhir:v "Follow Upvs" ] ;
        fhir:description [ fhir:v "This is a valueset for Follow up" ] ;
        fhir:isExample [ fhir:v false ]
      ] [
@@ -181,21 +186,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/MyPatient> ;
-         fhir:reference [ fhir:v "StructureDefinition/MyPatient" ]
-       ] ;
-       fhir:name [ fhir:v "MyPatient" ] ;
-       fhir:description [ fhir:v "An example profile of the Patient resource." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://example.org/StructureDefinition/NLLMedication> ;
          fhir:reference [ fhir:v "StructureDefinition/NLLMedication" ]
        ] ;
@@ -215,25 +205,6 @@
        ] ;
        fhir:name [ fhir:v "NLLMedication" ] ;
        fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Patient"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/Patient/PatientExample> ;
-         fhir:reference [ fhir:v "Patient/PatientExample" ]
-       ] ;
-       fhir:name [ fhir:v "PatientExample" ] ;
-       fhir:description [ fhir:v "An example of a patient with a license to krill." ] ;
-       fhir:isExample [ fhir:v true ] ;
-       fhir:profile ( [
-         fhir:v "http://example.org/StructureDefinition/MyPatient"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/MyPatient>
-       ] )
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

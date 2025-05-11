@@ -21,6 +21,7 @@
       <sch:assert test="count(f:authoredOn) &lt;= 0">authoredOn: maximum cardinality of 'authoredOn' is 0</sch:assert>
       <sch:assert test="count(f:performer) &lt;= 0">performer: maximum cardinality of 'performer' is 0</sch:assert>
       <sch:assert test="count(f:device) &lt;= 0">device: maximum cardinality of 'device' is 0</sch:assert>
+      <sch:assert test="count(f:reason) &gt;= 1">reason: minimum cardinality of 'reason' is 1</sch:assert>
       <sch:assert test="count(f:courseOfTherapyType) &lt;= 0">courseOfTherapyType: maximum cardinality of 'courseOfTherapyType' is 0</sch:assert>
       <sch:assert test="count(f:insurance) &lt;= 0">insurance: maximum cardinality of 'insurance' is 0</sch:assert>
       <sch:assert test="count(f:note) &lt;= 0">note: maximum cardinality of 'note' is 0</sch:assert>

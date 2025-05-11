@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "MedicationProfiles",
   "status" : "draft",
-  "date" : "2025-05-05T10:23:37+02:00",
+  "date" : "2025-05-11T16:39:14+02:00",
   "publisher" : "Agnes Rehn, master thesis at Karolinska Institutet",
   "contact" : [{
     "name" : "Agnes Rehn, master thesis at Karolinska Institutet",
@@ -55,7 +55,9 @@
         "reference" : "Medication/exampleIbuprofen400mg"
       },
       "name" : "exampleIbuprofen400mg",
-      "isExample" : true
+      "description" : "This instance describes how a medication order for 1 talet of Ibuprofen with the strength 400 mg, could be structured",
+      "isExample" : true,
+      "profile" : ["http://example.org/StructureDefinition/my-MyMedication"]
     },
     {
       "extension" : [{
@@ -77,7 +79,7 @@
       "reference" : {
         "reference" : "ValueSet/FollowUpVs"
       },
-      "name" : "Follow Up",
+      "name" : "Follow Upvs",
       "description" : "This is a valueset for Follow up",
       "isExample" : false
     },
@@ -135,18 +137,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MyPatient"
-      },
-      "name" : "MyPatient",
-      "description" : "An example profile of the Patient resource.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/NLLMedication"
       },
       "name" : "NLLMedication",
@@ -162,19 +152,6 @@
       },
       "name" : "NLLMedication",
       "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/PatientExample"
-      },
-      "name" : "PatientExample",
-      "description" : "An example of a patient with a license to krill.",
-      "isExample" : true,
-      "profile" : ["http://example.org/StructureDefinition/MyPatient"]
     },
     {
       "extension" : [{

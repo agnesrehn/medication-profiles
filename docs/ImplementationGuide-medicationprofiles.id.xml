@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MedicationProfiles"/>
   <status value="draft"/>
-  <date value="2025-05-05T10:23:37+02:00"/>
+  <date value="2025-05-11T16:39:14+02:00"/>
   <publisher value="Agnes Rehn, master thesis at Karolinska Institutet"/>
   <contact>
     <name value="Agnes Rehn, master thesis at Karolinska Institutet"/>
@@ -49,7 +49,9 @@
         <reference value="Medication/exampleIbuprofen400mg"/>
       </reference>
       <name value="exampleIbuprofen400mg"/>
+      <description value="This instance describes how a medication order for 1 talet of Ibuprofen with the strength 400 mg, could be structured"/>
       <isExample value="true"/>
+      <profile value="http://example.org/StructureDefinition/my-MyMedication"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -69,7 +71,7 @@
       <reference>
         <reference value="ValueSet/FollowUpVs"/>
       </reference>
-      <name value="Follow Up"/>
+      <name value="Follow Upvs"/>
       <description value="This is a valueset for Follow up"/>
       <isExample value="false"/>
     </resource>
@@ -122,17 +124,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MyPatient"/>
-      </reference>
-      <name value="MyPatient"/>
-      <description value="An example profile of the Patient resource."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/NLLMedication"/>
       </reference>
       <name value="NLLMedication"/>
@@ -147,18 +138,6 @@
       </reference>
       <name value="NLLMedication"/>
       <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PatientExample"/>
-      </reference>
-      <name value="PatientExample"/>
-      <description value="An example of a patient with a license to krill."/>
-      <isExample value="true"/>
-      <profile value="http://example.org/StructureDefinition/MyPatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

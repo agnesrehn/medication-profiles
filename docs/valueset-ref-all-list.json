@@ -5,9 +5,9 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "FollowUp",
-      "title" : "Follow Up",
+      "title" : "Follow Upvs",
       "description" : "This is a valueset for Follow up",
-      "systems" : ["https://www.snomed.org/what-is-snomed-ct"],
+      "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
       "StructureDefinition-followup-extension.html" : "Follow Up"
@@ -24,8 +24,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.95"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
@@ -39,9 +39,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.90", "2.16.840.1.113883.4.642.3.97"],
       "uses" : {
       },
-      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
       "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administration-subpotent-reason",
@@ -60,20 +60,6 @@
       "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "AdministrativeGender",
-      "title" : "AdministrativeGender",
-      "description" : "The gender of a person used for administrative purposes.",
-      "systems" : ["http://hl7.org/fhir/administrative-gender"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1"],
-      "uses" : {
-      },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/all-languages",
       "version" : "5.0.0",
       "status" : "active",
@@ -85,13 +71,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.21"],
       "uses" : {
       },
-      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
       "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
-      "StructureDefinition-MyPatient.html" : "MyPatient",
-      "StructureDefinition-NLLMedication.html" : "NLLMedication",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication"
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
@@ -105,9 +90,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.346"],
       "uses" : {
       },
-      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
       "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -129,8 +114,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -152,8 +137,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/event-timing",
@@ -170,8 +155,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.75"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -185,9 +170,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
-      "StructureDefinition-NLLMedication.html" : "NLLMedication",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication"
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -201,9 +186,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
-      "StructureDefinition-NLLMedication.html" : "NLLMedication",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication"
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -223,52 +208,12 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
       "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
-      "StructureDefinition-MyPatient.html" : "MyPatient",
-      "StructureDefinition-NLLMedication.html" : "NLLMedication",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/link-type",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "LinkType",
-      "title" : "Link Type",
-      "description" : "The type of link between this Patient resource and another Patient/RelatedPerson resource.",
-      "systems" : ["http://hl7.org/fhir/link-type"],
-      "oids" : [
-        "2.16.840.1.113883.4.642.2.234",
-        "2.16.840.1.113883.4.642.3.423",
-        "2.16.840.1.113883.4.642.3.412"
-      ],
-      "sources" : [
-        "2.16.840.1.113883.4.642.2.234",
-        "2.16.840.1.113883.4.642.3.423",
-        "2.16.840.1.113883.4.642.3.412"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "MaritalStatusCodes",
-      "title" : "Marital Status Codes",
-      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.29"],
-      "sources" : ["2.16.840.1.113883.4.642.3.29"],
-      "uses" : {
-      },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
@@ -336,8 +281,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.89", "2.16.840.1.113883.4.642.3.96"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
@@ -359,12 +304,12 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
       "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
+      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
-      "StructureDefinition-NLLMedication.html" : "NLLMedication",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication"
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-dose-aid",
@@ -378,8 +323,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.3241"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
@@ -401,9 +346,9 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
-      "StructureDefinition-NLLMedication.html" : "NLLMedication",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication"
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-ingredientstrength",
@@ -419,9 +364,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1953"],
       "uses" : {
       },
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
-      "StructureDefinition-NLLMedication.html" : "NLLMedication",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication"
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-intended-performer-role",
@@ -437,8 +382,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1979"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-status",
@@ -458,9 +403,9 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
-      "StructureDefinition-NLLMedication.html" : "NLLMedication",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication"
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location",
@@ -476,8 +421,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.3242"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
@@ -493,8 +438,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1326"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
@@ -508,8 +453,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1321"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
@@ -523,8 +468,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1320"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
@@ -540,8 +485,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1324"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/narrative-status",
@@ -555,23 +500,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.55"],
       "uses" : {
       },
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
-      "StructureDefinition-NLLMedication.html" : "NLLMedication",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "PatientContactRelationship",
-      "title" : "Patient Contact Relationship ",
-      "description" : "The nature of the relationship between the patient and the contact person.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
-      "uses" : {
-      },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
+      "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
@@ -631,8 +562,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -646,9 +577,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
       "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
@@ -665,8 +596,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.78"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
@@ -680,8 +611,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.77"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/dose-rate-type",
@@ -695,8 +626,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.981"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
@@ -726,8 +657,8 @@
       "sources" : ["2.16.840.1.113883.1.11.19377"],
       "uses" : {
       },
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosage.html" : "My Dosage"
+      "StructureDefinition-my-MyDosage.html" : "My Dosage",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     }
   ]
 }

@@ -203,12 +203,6 @@
         "title": "My Medication"
       }
     ],
-    "Patient": [
-      {
-        "url": "http://example.org/StructureDefinition/MyPatient",
-        "title": "MyPatient"
-      }
-    ],
     "MedicationRequest": [
       {
         "url": "http://example.org/StructureDefinition/my-medicationrequest",

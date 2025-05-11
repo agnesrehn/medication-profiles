@@ -1,9 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="05a2b8c8-3b3a-4423-9fb3-4b70268ff56e"/>
+  <id value="448b00dd-95ba-4c67-9495-798753330b0d"/>
   <meta>
-    <lastUpdated value="2025-05-05T10:24:03.584+02:00"/>
+    <lastUpdated value="2025-05-11T16:39:32.503+02:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/FollowUpVs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-448337001"> </a>  
+                  <a href="http://snomed.info/id/448337001">448337001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Telemedicine consultation with patient (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-390906007"> </a>  
+                  <a href="http://snomed.info/id/390906007">390906007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Follow-up encounter (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/FollowUpVs"/>
+        <version value="0.1.0"/>
+        <name value="FollowUp"/>
+        <title value="Follow Upvs"/>
+        <status value="draft"/>
+        <date value="2025-05-11T16:39:14+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:79c027b2-3d30-4f3d-8b24-0a464bcc1a71"/>
+          <timestamp value="2025-05-11T16:39:52+02:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="448337001"/>
+            <display value="Telemedicine consultation with patient (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="390906007"/>
+            <display value="Follow-up encounter (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "MyDosageAdministration"] ; # 
   fhir:title [ fhir:v "My DosageAdministration"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-05T10:23:37+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-11T16:39:14+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet" ] ;

@@ -1,8 +1,68 @@
 {
   "resourceType" : "Bundle",
-  "id" : "05a2b8c8-3b3a-4423-9fb3-4b70268ff56e",
+  "id" : "448b00dd-95ba-4c67-9495-798753330b0d",
   "meta" : {
-    "lastUpdated" : "2025-05-05T10:24:03.584+02:00"
+    "lastUpdated" : "2025-05-11T16:39:32.503+02:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.org/ValueSet/FollowUpVs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-448337001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/448337001\">448337001</a></td><td>http://snomed.info/sct</td><td>Telemedicine consultation with patient (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-390906007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/390906007\">390906007</a></td><td>http://snomed.info/sct</td><td>Follow-up encounter (procedure)</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/FollowUpVs",
+      "version" : "0.1.0",
+      "name" : "FollowUp",
+      "title" : "Follow Upvs",
+      "status" : "draft",
+      "date" : "2025-05-11T16:39:14+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:79c027b2-3d30-4f3d-8b24-0a464bcc1a71",
+        "timestamp" : "2025-05-11T16:39:52+02:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "448337001",
+          "display" : "Telemedicine consultation with patient (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "390906007",
+          "display" : "Follow-up encounter (procedure)"
+        }]
+      }
+    }
+  }]
 }

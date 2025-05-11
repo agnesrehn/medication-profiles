@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="FollowUpVs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet FollowUpVs</b></p><a name="FollowUpVs"> </a><a name="hcFollowUpVs"> </a><a name="FollowUpVs-en-US"> </a><ul><li>Include these codes as defined in <code>https://www.snomed.org/what-is-snomed-ct</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>448337001</td><td>telemedicinkonsultation med patient</td></tr><tr><td>390906007</td><td>uppföljande kontakt</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet FollowUpVs</b></p><a name="FollowUpVs"> </a><a name="hcFollowUpVs"> </a><a name="FollowUpVs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/448337001">448337001</a></td><td>telemedicinkonsultation med patient</td></tr><tr><td><a href="http://snomed.info/id/390906007">390906007</a></td><td>uppföljande kontakt</td></tr></table></li></ul></div>
   </text>
   <url value="http://example.org/ValueSet/FollowUpVs"/>
   <version value="0.1.0"/>
   <name value="FollowUp"/>
-  <title value="Follow Up"/>
+  <title value="Follow Upvs"/>
   <status value="draft"/>
-  <date value="2025-05-05T10:23:37+02:00"/>
+  <date value="2025-05-11T16:39:14+02:00"/>
   <publisher value="Agnes Rehn, master thesis at Karolinska Institutet"/>
   <contact>
     <name value="Agnes Rehn, master thesis at Karolinska Institutet"/>
@@ -22,7 +22,7 @@
   <description value="This is a valueset for Follow up"/>
   <compose>
     <include>
-      <system value="https://www.snomed.org/what-is-snomed-ct"/>
+      <system value="http://snomed.info/sct"/>
       <concept>
         <code value="448337001"/>
         <display value="telemedicinkonsultation med patient"/>

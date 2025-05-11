@@ -5,9 +5,9 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "FollowUp",
-      "title" : "Follow Up",
+      "title" : "Follow Upvs",
       "description" : "This is a valueset for Follow up",
-      "systems" : ["https://www.snomed.org/what-is-snomed-ct"],
+      "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
       "StructureDefinition-followup-extension.html" : "Follow Up"
