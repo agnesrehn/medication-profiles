@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MedicationProfiles"/>
   <status value="draft"/>
-  <date value="2025-05-11T16:39:14+02:00"/>
+  <date value="2025-06-02T21:24:52+02:00"/>
   <publisher value="Agnes Rehn, master thesis at Karolinska Institutet"/>
   <contact>
     <name value="Agnes Rehn, master thesis at Karolinska Institutet"/>
@@ -27,7 +27,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r5"/>
-    <version value="6.3.0"/>
+    <version value="6.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -49,7 +49,7 @@
         <reference value="Medication/exampleIbuprofen400mg"/>
       </reference>
       <name value="exampleIbuprofen400mg"/>
-      <description value="This instance describes how a medication order for 1 talet of Ibuprofen with the strength 400 mg, could be structured"/>
+      <description value="This instance describes how a medication order for 1 tablet of Ibuprofen with the strength 400 mg, could be structured"/>
       <isExample value="true"/>
       <profile value="http://example.org/StructureDefinition/my-MyMedication"/>
     </resource>

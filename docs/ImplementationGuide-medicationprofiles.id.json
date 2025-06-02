@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "MedicationProfiles",
   "status" : "draft",
-  "date" : "2025-05-11T16:39:14+02:00",
+  "date" : "2025-06-02T21:24:52+02:00",
   "publisher" : "Agnes Rehn, master thesis at Karolinska Institutet",
   "contact" : [{
     "name" : "Agnes Rehn, master thesis at Karolinska Institutet",
@@ -29,7 +29,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "6.3.0"
+    "version" : "6.4.0"
   },
   {
     "id" : "hl7ext",
@@ -55,7 +55,7 @@
         "reference" : "Medication/exampleIbuprofen400mg"
       },
       "name" : "exampleIbuprofen400mg",
-      "description" : "This instance describes how a medication order for 1 talet of Ibuprofen with the strength 400 mg, could be structured",
+      "description" : "This instance describes how a medication order for 1 tablet of Ibuprofen with the strength 400 mg, could be structured",
       "isExample" : true,
       "profile" : ["http://example.org/StructureDefinition/my-MyMedication"]
     },

@@ -25,7 +25,7 @@
   fhir:name [ fhir:v "GoalExtension"] ; # 
   fhir:title [ fhir:v "Treatment Goal"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-11T16:39:14+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-02T21:24:52+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet" ] ;

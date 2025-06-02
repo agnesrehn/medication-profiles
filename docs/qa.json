@@ -6,8 +6,8 @@
   "status" : "draft",
   "package-id" : "medicationprofiles.id",
   "ig-ver" : "0.1.0",
-  "date" : "Sun, 11 May, 2025 16:39:32 +0200",
-  "dateISO8601" : "2025-05-11T16:39:32+02:00",
+  "date" : "Mon, 02 Jun, 2025 21:25:32 +0200",
+  "dateISO8601" : "2025-06-02T21:25:32+02:00",
   "errs" : 505,
   "warnings" : 115,
   "hints" : 1,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "5.0.0",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1298728336
+  "maxMemory" : 2183051200
 }

@@ -40,8 +40,8 @@
       "uses" : {
       },
       "StructureDefinition-my-MyDosage.html" : "My Dosage",
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration"
+      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administration-subpotent-reason",
@@ -72,10 +72,10 @@
       "uses" : {
       },
       "StructureDefinition-my-MyDosage.html" : "My Dosage",
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
@@ -91,8 +91,8 @@
       "uses" : {
       },
       "StructureDefinition-my-MyDosage.html" : "My Dosage",
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration"
+      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -170,8 +170,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
@@ -186,8 +186,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
@@ -209,10 +209,10 @@
       "uses" : {
       },
       "StructureDefinition-my-MyDosage.html" : "My Dosage",
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
@@ -305,10 +305,10 @@
       "uses" : {
       },
       "StructureDefinition-my-MyDosage.html" : "My Dosage",
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
@@ -346,8 +346,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
@@ -364,8 +364,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1953"],
       "uses" : {
       },
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
@@ -403,8 +403,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
@@ -500,8 +500,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.55"],
       "uses" : {
       },
-      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-my-MyMedication.html" : "My Medication",
+      "StructureDefinition-NLLMedicationSnapshot.html" : "NLLMedication",
       "StructureDefinition-NLLMedication.html" : "NLLMedication"
     },
     {
@@ -578,8 +578,8 @@
       "uses" : {
       },
       "StructureDefinition-my-MyDosage.html" : "My Dosage",
-      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest",
-      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration"
+      "StructureDefinition-my-MyDosageAdministration.html" : "My DosageAdministration",
+      "StructureDefinition-my-medicationrequest.html" : "My MedicationRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",

@@ -1,14 +1,3 @@
-//Valueset for the codes in the extension "Follow Up"
-Alias: $SCT = https://www.snomed.org/what-is-snomed-ct
-ValueSet: FollowUp
-Id: FollowUpVs
-Title: "Follow Up"
-Description: "This is a valueset for Follow up"
-//* https://www.snomed.org/what-is-snomed-ct
-* $SCT#448337001 "telemedicinkonsultation med patient" 
-* $SCT#390906007 "uppföljande kontakt"
-
-
 Profile: MyMedicationRequest
 Parent: MedicationRequest
 Id: my-medicationrequest
@@ -31,6 +20,7 @@ Description: "A profile based on MedicationRequest for example a 10-day antibiot
 
 
 //TreatmentReason: No changes
+* reason 1..* MS
 
 //Administrating time
 * dosageInstruction.timing.event 1..1
@@ -80,22 +70,3 @@ Description: "A profile based on MedicationRequest for example a 10-day antibiot
 * renderedDosageInstruction 0..0
 * effectiveDosePeriod 0..0
 * dispenseRequest 0..0
-
-
-/*
-obligatoriskt: status, intent, medication, suvject, substitution allowed
-//Instance for MyMedicationRequest
-Instance: exampleMyMedicationRequest
-InstanceOf: MyMedicationRequest
-Usage: #example
-* status = #active
-* intent = #order
-* medicationCodeableConcept = { text = "Ibuprofen 400 mg tablet" }
-* subject.reference = "Patient/example"
-* authoredOn = "2025-04-23"
-* dosageInstruction[0].text = "Take one tablet every 8 hours for pain relief"
-* dosageInstruction[0].timing.repeat.boundsPeriod.start = "2025-04-23"
-* dosageInstruction[0].timing.event[0] = "2025-04-23T08:00:00Z"
-* dosageInstruction[0].timing.repeat.frequency = 3
-* substitution.allowedBoolean = false
-*/

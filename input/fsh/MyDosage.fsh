@@ -18,6 +18,8 @@ Description: "A Profile based on MedicationRequest describing the dosage in medi
 
 //offset: No changes
 
+//dosageInterval: No changes
+
 //Delete from parent:
 * priorPrescription 0..0
 * statusReason 0..0
@@ -39,14 +41,3 @@ Description: "A Profile based on MedicationRequest describing the dosage in medi
 * dispenseRequest.initialFill 0..0
 * dispenseRequest.numberOfRepeatsAllowed 0..0
 * dispenseRequest.quantity 0..0
-
-
-/*
-obligatoriskt: status, intent, medication, suvject, substitution allowed
-Instance: exampleMyDosage
-InstanceOf: MyDosage
-Usage: #Example
-* dosageInstruction.doseAndRate.rate[0].value = 1
-* dosageInstruction.doseAndRate.rate[0].unit = "tablet"
-* dosageInstruction.timing.repeat.when = "Morning"
-*/

@@ -30,18 +30,3 @@ Description: "A Profile based on MedicationAdministration describing the adminis
 * supportingInformation 0..0
 * recorded 0..0 
 * reason 0..0
-
-
-
-
-/*
-Obligatoriska: status, medication, subject, occurence[x],actor
-Instance: exampleMyDosage
-InstanceOf: MyDosageAdministration 
-Usage: #Example
-* medication.reference = "Medication/example"
-* subject.reference = "Patient/example-patient"
-* occurrenceDateTime = "2025-04-28T10:00:00+00:00"
-* extension[SelfAdministration].valueBoolean = false
-* note[0].text = "5 mg Every 4 hours for pain relief"
-*/
