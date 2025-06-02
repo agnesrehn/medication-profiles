@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "FollowUp"] ; # 
   fhir:title [ fhir:v "Follow Upvs"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-02T21:24:52+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-02T21:28:26+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agnes Rehn, master thesis at Karolinska Institutet" ] ;

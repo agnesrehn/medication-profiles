@@ -1,14 +1,14 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-\fsh-generated\resources\ImplementationGuide-medicationprofiles.id.json	4806	-	0	0	0	0	0	0	1	95	0	0	0	0	0	0	0	1	0	0	39	63	0	0	0	2	0	0
-fsh-generated/resources/Medication-exampleIbuprofen400mg.json	587	17	0	0	0	0	0	0	0	198	0	0	0	0	0	0	0	0	0	0	11	13	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-SiteQualifier.json	2061	9	0	11	0	0	1	0	0	64	0	0	1	0	0	0	0	0	0	0	46	879	0	0	0	1	0	1
-fsh-generated/resources/StructureDefinition-followup-extension.json	2941	8	0	11	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	101	227	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-goal-extension.json	1466	8	0	6	0	0	0	0	0	6	0	0	0	0	0	0	0	1	0	0	44	93	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-my-MyDosage.json	3567	8	0	40	0	0	0	0	0	18	0	0	0	0	0	0	0	1	0	0	354	345	0	0	0	9	0	1
-fsh-generated/resources/StructureDefinition-my-MyDosageAdministration.json	3044	8	0	18	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	155	206	0	0	0	4	1	1
-fsh-generated/resources/StructureDefinition-my-MyMedication.json	1354	7	0	111	0	0	0	0	0	23	0	0	0	0	0	0	0	1	0	0	417	735	0	0	0	12	0	1
-fsh-generated/resources/StructureDefinition-my-medicationrequest.json	5223	8	0	40	0	0	0	0	0	25	0	0	0	0	0	0	0	1	0	0	407	327	0	0	0	14	0	0
-fsh-generated/resources/StructureDefinition-self-administration.json	2050	7	0	7	1	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	43	84	0	0	0	1	0	1
-fsh-generated/resources/ValueSet-FollowUpVs.json	584	7	0	0	0	0	0	0	0	53	0	0	0	0	0	0	0	0	0	0	11	1261	0	0	0	0	0	0
-input/extensions/NLLMedication.json	38249	17	0	0	0	0	0	0	0	146	0	0	1	0	0	0	0	2	0	0	840	666	0	3	0	16	0	1
-input/extensions/NLLMedicationSnapshot.json	627053	122	0	74	0	0	0	0	0	35	0	0	0	0	0	0	0	2	0	0	870	579	0	2	0	18	0	1
+\fsh-generated\resources\ImplementationGuide-medicationprofiles.id.json	4806	-	0	0	0	0	0	0	1	91	0	0	0	0	0	0	0	0	0	0	38	60	0	0	0	0	0	0
+fsh-generated/resources/Medication-exampleIbuprofen400mg.json	587	15	0	0	0	0	0	0	0	188	0	0	0	0	0	0	0	0	0	0	9	12	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-SiteQualifier.json	2061	10	0	10	0	0	1	0	0	38	0	0	1	0	0	0	0	0	0	0	47	641	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-followup-extension.json	2941	11	0	9	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	101	211	0	0	0	2	0	1
+fsh-generated/resources/StructureDefinition-goal-extension.json	1466	10	0	6	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	39	94	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-my-MyDosage.json	3567	11	0	39	0	0	0	0	0	18	0	0	0	0	0	0	0	1	0	0	337	423	0	0	0	8	0	0
+fsh-generated/resources/StructureDefinition-my-MyDosageAdministration.json	3044	9	0	19	0	0	0	0	0	11	0	0	0	0	0	0	0	1	0	0	154	211	0	0	0	3	0	1
+fsh-generated/resources/StructureDefinition-my-MyMedication.json	1354	8	0	96	0	0	0	0	0	24	0	0	0	0	0	0	0	1	0	0	411	756	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-my-medicationrequest.json	5223	9	0	34	0	0	0	0	0	20	0	0	0	0	0	0	0	1	0	0	384	332	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-self-administration.json	2050	8	0	5	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	47	82	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-FollowUpVs.json	584	9	0	0	0	0	0	0	0	51	0	0	0	0	0	0	0	0	0	0	13	1167	0	0	0	0	0	0
+input/extensions/NLLMedication.json	38249	13	0	0	1	0	0	0	0	130	0	0	0	0	0	0	0	1	0	0	858	592	0	3	0	14	1	1
+input/extensions/NLLMedicationSnapshot.json	627053	90	0	64	0	0	0	0	0	31	0	0	1	0	0	0	0	1	0	0	860	613	0	1	0	13	0	1

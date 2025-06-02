@@ -3,7 +3,7 @@ MedicationProfiles : Validation Results
 
 err = 505, warn = 115, info = 1
 IG Publisher Version: 1.8.25 Out of date - current version is 2.0.3
-Generated Mon Jun 02 21:26:41 CEST 2025. FHIR version 5.0.0 for medicationprofiles.id#0.1.0 (canonical = http://example.org)
+Generated Mon Jun 02 21:29:39 CEST 2025. FHIR version 5.0.0 for medicationprofiles.id#0.1.0 (canonical = http://example.org)
  Build Errors : 228 / 6 / 0
  C:\Users\rasmu\MedicationProfiles\fsh-generated\resources\ImplementationGuide-medicationprofiles.id : 0 / 0 / 1
  C:\Users\rasmu\MedicationProfiles\fsh-generated\resources\Medication-exampleIbuprofen400mg : 4 / 0 / 2
